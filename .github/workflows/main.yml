@@ -9,8 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Minha primeira ação"
+        ##woworking-directory:Informa o diretoria que será executado a ação 
         run: echo "Hello World !!!"
       - name: "Segunda ação"
         run: |
           echo "Você criou o seu primeiro workflow!!"
           echo "Parabéns!!!"
+      - name: "Script Python"
+        run: |
+          variavel = "Hello World!!!"
+          print(variavel)
+        shell: python
